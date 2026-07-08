@@ -1,4 +1,6 @@
-# %%
+HACKERRANK :
+1. 2D Array (Matrix) :
+
 matrix = [
     [1, 2, 3],
     [4, 5, 6],
@@ -6,15 +8,16 @@ matrix = [
 ]
 print(f"Element at row 1, col 2: {matrix[1][2]}")
 
-# %%
+2. Sparse Array :
+
 sparse_array = {2: 10, 5: 45, 102: 99}
 def get_val(idx):
     return sparse_array.get(idx, 0)
 print(f"Value at index 5: {get_val(5)}")
 print(f"Value at index 20: {get_val(20)}")
 
-# %%
-# Counting frequencies of elements (assuming max value is 9)
+3. counting sort 1 :
+
 arr = [1, 4, 1, 2, 7, 5, 2]
 count_arr = [0] * 10
 
@@ -23,7 +26,11 @@ for num in arr:
 
 print("Frequency count array:", count_arr)
 
-# %%
+
+CODECHEF :
+
+1. REVESE A NUMBER :
+
 num = 12345
 reversed_num = 0
 
@@ -34,14 +41,17 @@ while num > 0:
 
 print("Reversed Number:", reversed_num)
 
-# %%
-# Fast sorting for a list of numbers
+
+2. TURBO SORT:
+
 numbers = [34, 12, 89, 5, 56]
 numbers.sort()  # In-place optimized sort
 
 print("Sorted Array:", numbers)
 
-# %%
+
+3. Lapindrome Check :
+
 def is_lapindrome(s):
     mid = len(s) // 2
     
@@ -55,7 +65,10 @@ print("gaga:", is_lapindrome("gaga"))
 print("rotor:", is_lapindrome("rotor"))
 print("hello:", is_lapindrome("hello"))
 
-# %%
+LEETCODE : 
+
+1. Best Time to Buy and Sell Stock :
+
 def maxProfit(prices):
     min_price = float('inf')
     max_profit = 0
@@ -72,7 +85,8 @@ def maxProfit(prices):
 prices = [7, 1, 5, 3, 6, 4]
 print("Max Profit:", maxProfit(prices))
 
-# %%
+2. Longest Common Prefix :
+
 def longestCommonPrefix(strs):
     if not strs:
         return ""
@@ -93,7 +107,8 @@ def longestCommonPrefix(strs):
 strs = ["flower", "flow", "flight"]
 print("Longest Common Prefix:", longestCommonPrefix(strs))
 
-# %%
+3. Search Insert Position (Binary Search) :
+
 def searchInsert(nums, target):
     low = 0
     high = len(nums) - 1
